@@ -5,14 +5,14 @@ class User {
     protected age: number
   ) {}
 
-  preferName: string = this.first_name;
+  preferredName: string = this.first_name;
 
   get fullname() {
     return `${this.first_name} ${this.last_name}`;
   }
 
-  set addPreferName(val: string) {
-    this.preferName = val;
+  set addPreferredName(val: string) {
+    this.preferredName = val;
   }
 
   get isAdult(): boolean {
@@ -43,8 +43,8 @@ const studentA = new Student("John", "Doe", 18, true);
 console.log(studentA.fullname);
 console.log(studentA.isAdult);
 console.log(studentA.getAvailableActivities);
-studentA.addPreferName = "Jonny";
-console.log(studentA.preferName);
+studentA.addPreferredName = "Jonny";
+console.log(studentA.preferredName);
 
 const studentB = new Student("Jane", "Smith", 16, false);
 console.log(studentB.fullname);
