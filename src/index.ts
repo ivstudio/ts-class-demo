@@ -7,7 +7,7 @@ class User {
 
   preferredName: string = this.first_name;
 
-  get fullname() {
+  get fullname(): string {
     return `${this.first_name} ${this.last_name}`;
   }
 
